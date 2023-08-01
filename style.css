@@ -1,0 +1,199 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: rgb(41, 41, 41); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+}
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 250ms;
+}
+.navbar ul li a:hover {
+    font-size: 15px;
+}
+.navbar ul li a::after {
+    border-bottom: solid 2px cyan;
+}
+
+/* PROFILE */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.profile-abstract {
+    color: rgb(231, 231, 231);
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+.profile-abstract p {
+    text-align: justify;
+}
+.profile-hero img {
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: 250ms;
+}
+.profile-hero img:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* ABOUT ME */
+.about-me {
+    height: 100vh;
+    background-image: url(assets/header-background-flipped.jpg);
+}
+.about-me h2 {
+    text-align: center;
+    border: solid 1px rgb(231, 231, 231);
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    color: rgb(231, 231, 231);
+    background-color: black;
+}
+#bio {
+    width: 50%;
+    text-align: justify;
+    transform: translateX(50%);
+    margin-top: 20px;
+    color: rgb(231, 231, 231);
+}
+
+/* SKILL */
+.skill {
+    height: 100vh;
+    background-image: url(assets/header-background.jpg);
+}
+.skill h2 {
+    text-align: center;
+    border: solid 1px rgb(231, 231, 231);
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    color: rgb(231, 231, 231);
+    background-color: #141414;
+}
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 15vh;
+}
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(231, 231, 231);
+}
+.skill-content i {
+    font-size: 100px;
+    color: rgb(231, 231, 231);
+}
+.skill-explain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    color: rgb(231, 231, 231);
+}
+.skill-explaination {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    text-align: justify;
+    margin-top: 5%;
+}
+.skill-explaination span {
+    color: aqua;
+}
+.skill-explaination p {
+    background-color: rgba(20, 20, 20, 50%);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 250ms ease-in-out;
+}
+.skill-explaination p:hover {
+    background-color: rgba(20, 20, 20, 100%); 
+    transform: scale(0.9);
+}
+
+/* SOCIAL  MEDIA */
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px black;
+    background-image: url(assets/header-background-flipped.jpg);
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
+}
+.social-media h2 {
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(231, 231, 231);
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 35px;
+}
+.social-media ul li a i {
+    color: rgb(231, 231, 231);
+    transition: 500ms;
+}
+.social-media ul li a i:hover  {
+    transform: scale(1.1) rotate(360deg);
+    color: cyan;
+}
+
