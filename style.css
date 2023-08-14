@@ -17,6 +17,50 @@
     position: relative;
 }
 
+/* Splash Screen -> STARTS */
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0F0F;
+    transition: 2s;
+    overflow: hidden;
+}
+
+.logo-header {
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.8s;
+    overflow: hidden;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.8s;
+}
+/* Splash Screen -> END */
+
 /* NAVIGATION BAR */
 .navbar {
     background-color: rgb(41, 41, 41); 
@@ -27,6 +71,8 @@
     padding: 15px;
     position: fixed;
     z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s 3s forwards;
 }
 .navbar ul li {
     display: inline-block;
@@ -57,7 +103,10 @@
     margin-right: 15%;
     margin-left: 15%;
     margin-top: 10%;
+    opacity: 0;
+    animation: fadeIn 1s 4s forwards;
 }
+
 .profile-abstract {
     color: rgb(231, 231, 231);
     padding-left: 20px;
@@ -197,3 +246,12 @@ footer {
     color: cyan;
 }
 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
